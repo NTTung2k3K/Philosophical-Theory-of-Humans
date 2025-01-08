@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ChevronsRight, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { TimelineContent } from "@/components/ui/framer-timeline";
+import Image from "next/image";
 
 function TimelineAnimation() {
   const aboutRef = useRef(null);
@@ -14,7 +15,7 @@ function TimelineAnimation() {
         ref={heroRef}
       >
         <TimelineContent animationNum={0} timelineRef={heroRef}>
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
             alt=""
@@ -29,8 +30,8 @@ function TimelineAnimation() {
           </TimelineContent>
           <TimelineContent animationNum={2} timelineRef={heroRef}>
             <p className="text-xl leading-[110%]">
-              There's no valid reason, I just need more star in my repo, please
-              do it guys 😁
+              no valid reason, I just need more star in my repo, please do it
+              guys 😁
             </p>
           </TimelineContent>
           <TimelineContent animationNum={3} timelineRef={heroRef}>
@@ -52,10 +53,7 @@ function TimelineAnimation() {
             <h1 className="text-5xl leading-[110%]">Follow me on X/Twitter?</h1>
           </TimelineContent>
           <TimelineContent animationNum={2} timelineRef={aboutRef}>
-            <p className="text-xl leading-[110%]">
-              There's no valid reason, I just need more follower, please do it
-              guys😍
-            </p>
+            <p className="text-xl leading-[110%]">guys😍</p>
           </TimelineContent>
           <TimelineContent animationNum={3} timelineRef={aboutRef}>
             <a
@@ -78,7 +76,7 @@ function TimelineAnimation() {
           </TimelineContent>
         </div>
         <TimelineContent animationNum={0} timelineRef={aboutRef}>
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
             alt=""
