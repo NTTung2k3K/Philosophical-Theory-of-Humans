@@ -19,13 +19,9 @@ function TimelineAnimation() {
           <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
-<<<<<<< HEAD:src/app/_components/test.tsx
-            alt="" width={100} height={100}
-=======
             alt=""
             width={100}
             height={100}
->>>>>>> fd0caa2d6f6ee1c1e76868a490a80162a78afee6:src/app/_components/timeline.tsx
           />
         </TimelineContent>
         <div className="space-y-2">
@@ -86,13 +82,9 @@ function TimelineAnimation() {
           <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
-<<<<<<< HEAD:src/app/_components/test.tsx
-            alt="" width={100} height={100}
-=======
             alt=""
             width={100}
             height={100}
->>>>>>> fd0caa2d6f6ee1c1e76868a490a80162a78afee6:src/app/_components/timeline.tsx
           />
         </TimelineContent>
       </section>
