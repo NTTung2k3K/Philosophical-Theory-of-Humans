@@ -1,5 +1,6 @@
 "use client";
 
+import { AudioPlayer } from "@/components/ui/music-button";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -31,14 +32,15 @@ const navigation = [
     href: "#opinion",
   },
   {
-    id: "conclustion",
+    id: "conclusion",
     label: "Kết luận",
-    href: "#conclustion",
+    href: "#conclusion",
   },
 ];
 
 export function SiteHeader() {
   const activeId = useScrollSpy(navigation.map((item) => `#${item.id}`));
+  console.log(activeId);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
@@ -72,6 +74,9 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
+          <div className="">
+            <AudioPlayer audioSrc="/music/main.mp3" />
+          </div>
         </div>
       </div>
     </header>
