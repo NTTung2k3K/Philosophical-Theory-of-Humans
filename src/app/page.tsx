@@ -1,7 +1,13 @@
 "use client";
 
-import TimelineAnimation from "@/app/_components/test";
+import AnalysisSection from "@/app/_components/analysis";
+import ConclusionSection from "@/app/_components/conclusion";
+import DevelopmentSection from "@/app/_components/development";
+import InfinityBrand from "@/app/_components/infinity-brand";
+import OpinionSection from "@/app/_components/opinion";
+import TimelineAnimation from "@/app/_components/timeline";
 import { SiteHeader } from "@/components/ui/site-header";
+import { RandomizedTextEffect } from "@/components/ui/text-randomized";
 import { JSX } from "react";
 
 export default function HorizontalScroll(): JSX.Element {
@@ -14,23 +20,18 @@ export default function HorizontalScroll(): JSX.Element {
           className="h-screen flex items-center justify-center tex bg-background bg-red-300"
         >
           <div className="container">
-            <h1 className="text-4xl font-bold">Welcome to Our Site</h1>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Scroll down to explore more
-            </p>
+            <div className="text-center">
+              <RandomizedTextEffect text="Vì lợi ích mười năm trồng cây<br> Vì lợi ích trăm năm trồng người" />
+            </div>
           </div>
         </section>
 
-        <section
-          id="analysis"
-          className="h-screen flex items-center justify-center bg-muted/50 bg-blue-300"
-        >
-          <div className="container">
-            <h2 className="text-3xl font-bold">Features</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Discover our amazing features
-            </p>
-          </div>
+        <div className="bg-orange-500" id="welcome">
+          <InfinityBrand />
+        </div>
+
+        <section id="analysis">
+          <AnalysisSection />
         </section>
 
         <section id="role" className="  bg-yellow-300">
@@ -67,39 +68,15 @@ export default function HorizontalScroll(): JSX.Element {
           </div>
         </section>
 
-        <section
-          id="development"
-          className="h-screen flex items-center justify-center bg-muted/50 bg-black"
-        >
-          <div className="container">
-            <h2 className="text-3xl font-bold">Testimonials</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              What our customers say
-            </p>
-          </div>
+        <section id="development">
+          <DevelopmentSection />
         </section>
 
-        <section
-          id="opinion"
-          className="h-screen flex items-center justify-center bg-green-300"
-        >
-          <div className="container">
-            <h2 className="text-3xl font-bold">Contact Us</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Get in touch with us
-            </p>
-          </div>
+        <section id="opinion">
+          <OpinionSection />
         </section>
-        <section
-          id="conclustion"
-          className="h-screen flex items-center justify-center bg-orange-400 "
-        >
-          <div className="container">
-            <h2 className="text-3xl font-bold">conclustion Us</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Get in touch with us
-            </p>
-          </div>
+        <section id="conclusion">
+          <ConclusionSection />
         </section>
       </main>
     </div>

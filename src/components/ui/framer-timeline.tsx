@@ -7,7 +7,7 @@ export const TimelineContent = ({
 }: {
   children: React.ReactNode;
   animationNum: number;
-  timelineRef: React.RefObject<HTMLDivElement>;
+  timelineRef: React.RefObject<HTMLDivElement | null>;
 }) => {
   const sequenceVariants = {
     visible: (i: number) => ({
