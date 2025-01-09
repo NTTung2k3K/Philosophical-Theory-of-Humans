@@ -6,6 +6,7 @@ import DevelopmentSection from "@/app/_components/development";
 import InfinityBrand from "@/app/_components/infinity-brand";
 import OpinionSection from "@/app/_components/opinion";
 import TimelineAnimation from "@/app/_components/timeline";
+import { TimelineDemo } from "@/app/_components/timeline-2";
 import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
 import ImageHover from "@/components/ui/tailwind-hover-accordion";
@@ -67,6 +68,7 @@ export default function HorizontalScroll(): JSX.Element {
 
         <section id="development">
           <DevelopmentSection />
+          <TimelineDemo />
         </section>
 
         <section id="opinion">
