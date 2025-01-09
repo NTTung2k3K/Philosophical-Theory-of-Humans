@@ -7,7 +7,9 @@ import InfinityBrand from "@/app/_components/infinity-brand";
 import OpinionSection from "@/app/_components/opinion";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
+import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
+import ImageHover from "@/components/ui/tailwind-hover-accordion";
 import { RandomizedTextEffect } from "@/components/ui/text-randomized";
 import { JSX } from "react";
 
@@ -35,36 +37,31 @@ export default function HorizontalScroll(): JSX.Element {
           <AnalysisSection />
         </section>
 
-        <section id="role" className="  bg-yellow-300">
+        {/* Section 3: Trồng Người */}
+        <section id="role" className="bg-yellow-300">
           <TimelineAnimation />
           <div className="container">
-            <h2 className="text-3xl font-bold">Pricing</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Choose your perfect plan
-            </p>
+            <h2 className="text-3xl font-bold">
+              Trồng Người và Phát Triển Xã Hội
+            </h2>
+
+            <h3 className="text-2xl font-bold mt-6">Dẫn Chứng Thực Tế</h3>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Vai Trò Của Con Người Trong Sự Phát Triển Xã Hội
+            </h3>
           </div>
+        </section>
+
+        {/* Other Sections */}
+        <section
+          id="development"
+          className="h-screen flex items-center justify-center bg-muted/50 bg-black"
+        >
           <div className="container">
-            <h2 className="text-3xl font-bold">Pricing</h2>
+            <h2 className="text-3xl font-bold">Testimonials</h2>
             <p className="mt-4 text-xl text-muted-foreground">
-              Choose your perfect plan
-            </p>
-          </div>
-          <div className="container">
-            <h2 className="text-3xl font-bold">Pricing</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Choose your perfect plan
-            </p>
-          </div>
-          <div className="container">
-            <h2 className="text-3xl font-bold">Pricing</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Choose your perfect plan
-            </p>
-          </div>
-          <div className="container">
-            <h2 className="text-3xl font-bold">Pricing</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Choose your perfect plan
+              What our customers say
             </p>
           </div>
         </section>
@@ -76,6 +73,12 @@ export default function HorizontalScroll(): JSX.Element {
 
         <section id="opinion">
           <OpinionSection />
+        </section>
+        <section id="conclusion">
+          <ImageHover />
+        </section>
+        <section id="conclusion">
+          <LinearCard />
         </section>
         <section id="conclusion">
           <ConclusionSection />
