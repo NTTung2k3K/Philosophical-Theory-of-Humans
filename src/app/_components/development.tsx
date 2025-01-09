@@ -1,4 +1,5 @@
 // thanks to oliver: https://www.youtube.com/@olivierlarose1
+/* eslint-disable */
 
 "use client";
 import { ReactLenis } from "lenis/react";
