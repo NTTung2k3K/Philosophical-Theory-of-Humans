@@ -18,7 +18,7 @@ function TimelineAnimation() {
           <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
-            alt=""
+            alt="" width={100} height={100}
           />
         </TimelineContent>
         <div className="space-y-2">
@@ -79,7 +79,7 @@ function TimelineAnimation() {
           <Image
             src="https://images.unsplash.com/photo-1724690416947-3cdc197ffab1?q=80&w=600&auto=format&fit=crop"
             className="w-full h-96  object-cover rounded-md "
-            alt=""
+            alt="" width={100} height={100}
           />
         </TimelineContent>
       </section>
