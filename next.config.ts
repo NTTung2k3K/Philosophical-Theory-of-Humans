@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
+/** @type {NextConfig} */
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
       {
@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+  },
+  webpack: (config) => {
+    // Thêm rule để xử lý file âm thanh
+    config.module.rules.push({
+      test: /\.(mp3|wav|m4a|ogg)$/,
+      type: "asset/resource",
+      generator: {
+        filename: "static/media/[name].[hash][ext]",
+      },
+    });
+    return config;
   },
 };
 

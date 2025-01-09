@@ -23,7 +23,7 @@ export function useScrollSpy(selectors: string[], options?: IntersectionObserver
                 }
             },
             {
-                rootMargin: "-20% 0px 0% 0px", // Điều chỉnh rootMargin cho phù hợp
+                rootMargin: "-50% 0px -50% 0px",
                 ...options,
             }
         );
