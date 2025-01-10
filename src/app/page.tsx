@@ -56,7 +56,7 @@ export default function HorizontalScroll(): JSX.Element {
         {/* Other Sections */}
         <section
           id="development"
-          className="h-screen flex items-center justify-center bg-muted/50 bg-black"
+          className="h-screen flex items-center justify-center bg-muted/50 bg-white"
         >
           <div className="container">
             <h2 className="text-3xl font-bold">Testimonials</h2>
@@ -64,11 +64,11 @@ export default function HorizontalScroll(): JSX.Element {
               What our customers say
             </p>
           </div>
-          <DevelopmentSection />
-          <TimelineDemo />
         </section>
 
         <section id="opinion">
+          <DevelopmentSection />
+          <TimelineDemo />
           <OpinionSection />
           <ImageHover />
           <LinearCard />
