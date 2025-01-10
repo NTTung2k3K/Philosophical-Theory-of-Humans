@@ -14,6 +14,17 @@ const nextConfig: NextConfig = {
         hostname: "assets.aceternity.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "png.pngtree.com",
+        pathname: "/**",
+      },
+
+      {
+        protocol: "https",
+        hostname: "scontent.fsgn12-1.fna.fbcdn.net",
+        pathname: "/**",
+      },
     ],
   },
   webpack: (config) => {
