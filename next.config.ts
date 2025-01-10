@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
         hostname: "png.pngtree.com",
         pathname: "/**",
       },
+
+      {
+        protocol: "https",
+        hostname: "scontent.fsgn12-1.fna.fbcdn.net",
+        pathname: "/**",
+      },
     ],
   },
   webpack: (config) => {

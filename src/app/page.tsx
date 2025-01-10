@@ -1,13 +1,22 @@
 "use client";
 
 import AnalysisSection from "@/app/_components/analysis";
+import { AnimatedTestimonialsDemo } from "@/app/_components/animated-testimonials";
 import ConclusionSection from "@/app/_components/conclusion";
 import DevelopmentSection from "@/app/_components/development";
+import { HeroHighlightDemo } from "@/app/_components/highlight-text";
 import InfinityBrand from "@/app/_components/infinity-brand";
 import Introduction from "@/app/_components/introduction";
 import OpinionSection from "@/app/_components/opinion";
+import { HeroScrollDemo } from "@/app/_components/scroll-animation";
+import { StickyScrollRevealDemo } from "@/app/_components/sticky-scroll";
+import { TabsDemo } from "@/app/_components/tabs";
+import { TextGenerateEffectDemo } from "@/app/_components/text-generate-effect";
+import { SpotlightPreview } from "@/app/_components/text-spoilight";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
+import { TracingBeamDemo } from "@/app/_components/tracing-beam";
+import LampDemo from "@/components/ui/lamp";
 import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
 import ImageHover from "@/components/ui/tailwind-hover-accordion";
@@ -17,6 +26,8 @@ export default function HorizontalScroll(): JSX.Element {
   return (
     <div className="relative">
       <SiteHeader />
+      {/* <FloatingDockDemo /> */}
+
       <main>
         <section
           id="welcome"
@@ -25,6 +36,7 @@ export default function HorizontalScroll(): JSX.Element {
           <div className="container">
             <div className="text-center">
               <Introduction />
+
               {/* <RandomizedTextEffect text="Vì lợi ích mười năm trồng cây<br> Vì lợi ích trăm năm trồng người" /> */}
             </div>
           </div>
@@ -75,7 +87,16 @@ export default function HorizontalScroll(): JSX.Element {
           <LinearCard />
         </section>
 
-        <section id="conclusion">
+        <section id="conclusion" className="bg-black">
+          <TracingBeamDemo />
+          <TextGenerateEffectDemo />
+          <TabsDemo />
+          <StickyScrollRevealDemo />
+          <LampDemo />
+          <SpotlightPreview />
+          <HeroHighlightDemo />
+          <HeroScrollDemo />
+          <AnimatedTestimonialsDemo />
           <ConclusionSection />
         </section>
       </main>
