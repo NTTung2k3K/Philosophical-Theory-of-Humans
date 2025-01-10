@@ -10,11 +10,19 @@ interface AnimatedTextProps {
 
 export function RandomizedTextEffect({ text }: AnimatedTextProps) {
   const [animatedText, setAnimatedText] = useState<string[]>([]);
+  const seededRandom = (seed: number) => {
+    const x = Math.sin(seed) * 10000;
+    return x - Math.floor(x); // Value between 0 and 1
+  };
 
   const getRandomChar = useCallback(
-    () =>
-      lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)],
-    []
+    (seed: number) => {
+      const randomIndex = Math.floor(
+        seededRandom(seed) * lettersAndSymbols.length
+      );
+      return lettersAndSymbols[randomIndex];
+    },
+    [lettersAndSymbols]
   );
 
   const animateText = useCallback(async () => {

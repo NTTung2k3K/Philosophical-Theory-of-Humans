@@ -16,7 +16,7 @@ export function TracingBeamDemo() {
 
             <p className={twMerge("text-xl mb-4")}>{item.title}</p>
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
