@@ -4,13 +4,13 @@ import AnalysisSection from "@/app/_components/analysis";
 import ConclusionSection from "@/app/_components/conclusion";
 import DevelopmentSection from "@/app/_components/development";
 import InfinityBrand from "@/app/_components/infinity-brand";
+import Introduction from "@/app/_components/introduction";
 import OpinionSection from "@/app/_components/opinion";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
 import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
 import ImageHover from "@/components/ui/tailwind-hover-accordion";
-import { RandomizedTextEffect } from "@/components/ui/text-randomized";
 import { JSX } from "react";
 
 export default function HorizontalScroll(): JSX.Element {
@@ -24,7 +24,8 @@ export default function HorizontalScroll(): JSX.Element {
         >
           <div className="container">
             <div className="text-center">
-              <RandomizedTextEffect text="Vì lợi ích mười năm trồng cây<br> Vì lợi ích trăm năm trồng người" />
+              <Introduction />
+              {/* <RandomizedTextEffect text="Vì lợi ích mười năm trồng cây<br> Vì lợi ích trăm năm trồng người" /> */}
             </div>
           </div>
         </section>
