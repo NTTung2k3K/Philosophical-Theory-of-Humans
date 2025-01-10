@@ -64,22 +64,16 @@ export default function HorizontalScroll(): JSX.Element {
               What our customers say
             </p>
           </div>
-        </section>
-
-        <section id="development">
           <DevelopmentSection />
           <TimelineDemo />
         </section>
 
         <section id="opinion">
           <OpinionSection />
-        </section>
-        <section id="conclusion">
           <ImageHover />
-        </section>
-        <section id="conclusion">
           <LinearCard />
         </section>
+
         <section id="conclusion">
           <ConclusionSection />
         </section>
