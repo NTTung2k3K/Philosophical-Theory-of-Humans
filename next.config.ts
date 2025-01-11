@@ -25,6 +25,11 @@ const nextConfig: NextConfig = {
         hostname: "scontent.fsgn12-1.fna.fbcdn.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
   webpack: (config) => {
