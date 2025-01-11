@@ -46,9 +46,9 @@ export default function HorizontalScroll(): JSX.Element {
           <AccessCount />
           <InfinityBrand />
         </div>
-
         <section id="analysis">
           <AnalysisSection />
+          <DevelopmentSection />
         </section>
 
         {/* Section 3: Trồng Người */}
@@ -81,7 +81,6 @@ export default function HorizontalScroll(): JSX.Element {
         </section>
 
         <section id="opinion">
-          <DevelopmentSection />
           <TimelineDemo />
           <OpinionSection />
           <ImageHover />

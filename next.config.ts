@@ -30,6 +30,11 @@ const nextConfig: NextConfig = {
         hostname: "plus.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "vi.wikipedia.org",
+        pathname: "/**",
+      },
     ],
   },
   webpack: (config) => {
