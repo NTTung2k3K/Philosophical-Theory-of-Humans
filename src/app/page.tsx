@@ -1,5 +1,6 @@
 "use client";
 
+import AccessCount from "@/app/_components/access-count";
 import AnalysisSection from "@/app/_components/analysis";
 import { AnimatedTestimonialsDemo } from "@/app/_components/animated-testimonials";
 import ConclusionSection from "@/app/_components/conclusion";
@@ -21,7 +22,6 @@ import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
 import ImageHover from "@/components/ui/tailwind-hover-accordion";
 import { JSX } from "react";
-
 export default function HorizontalScroll(): JSX.Element {
   return (
     <div className="relative">
@@ -43,10 +43,8 @@ export default function HorizontalScroll(): JSX.Element {
         </section>
 
         <div className="bg-orange-500" id="welcome">
+          <AccessCount />
           <InfinityBrand />
-        </div>
-        <div>
-          <img src="\assets\image\Aristotle.jpg" alt="image" />
         </div>
         <section id="analysis">
           <AnalysisSection />
@@ -87,13 +85,14 @@ export default function HorizontalScroll(): JSX.Element {
           <OpinionSection />
           <ImageHover />
           <LinearCard />
+          <TextGenerateEffectDemo />
         </section>
 
         <section id="conclusion" className="bg-black">
           <TracingBeamDemo />
-          <TextGenerateEffectDemo />
-          <TabsDemo />
+          <div className="my-1"></div>
           <StickyScrollRevealDemo />
+          <TabsDemo />
           <LampDemo />
           <SpotlightPreview />
           <HeroHighlightDemo />

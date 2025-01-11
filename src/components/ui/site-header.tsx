@@ -40,7 +40,6 @@ const navigation = [
 
 export function SiteHeader() {
   const activeId = useScrollSpy(navigation.map((item) => `#${item.id}`));
-  console.log(activeId);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
