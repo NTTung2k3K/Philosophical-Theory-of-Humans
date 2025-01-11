@@ -7,43 +7,43 @@ import { JSX, useRef } from "react";
 import Image from "next/image";
 const projects = [
   {
-    title: "Matthias Leidinger",
+    title: "Aristotle (384 - 322 BC)",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
-    src: "rock.jpg",
-    link: "https://images.unsplash.com/photo-1605106702842-01a887a31122?q=80&w=500&auto=format&fit=crop",
+      "Aristotle từng nói: 'Giáo dục là trang bị công cụ cho tâm hồn.' Theo ông, giáo dục không chỉ là việc truyền đạt kiến thức mà còn là sự rèn luyện đạo đức và lý trí, giúp con người hướng đến eudaimonia (hạnh phúc tối thượng). Ông nhấn mạnh rằng, con người là zoon politikon (sinh vật chính trị), nghĩa là con người chỉ thực sự phát triển trong một cộng đồng.",
+    src: "https://vi.wikipedia.org/wiki/Aristoteles",
+    link: "/assets/image/Aristotle.jpg",
     color: "#5196fd",
   },
   {
-    title: "Clément Chapillon",
+    title: "Immanuel Kant (1724 - 1804)",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément.",
-    src: "tree.jpg",
-    link: "https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?w=500&auto=format&fit=crop&q=60",
+      "Immanuel Kant khẳng định: “Con người là cứu cánh, chứ không phải phương tiện.” Tư tưởng này phản ánh quan điểm đạo đức học của Kant, nơi con người được xem là mục đích cuối cùng, và mọi hành động phải xuất phát từ sự tôn trọng phẩm giá và tự do của họ. Kant nhấn mạnh rằng sự phát triển con người phải bao gồm cả tri thức lẫn đạo đức để xây dựng một xã hội bền vững.",
+    src: "https://vi.wikipedia.org/wiki/Immanuel_Kant",
+    link: "/assets/image/ImmanuelKant.jpg",
     color: "#8f89ff",
   },
   {
-    title: "Zissou",
+    title: "Jean-Jacques Rousseau (1712 - 1778)",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.",
-    src: "water.jpg",
-    link: "https://images.unsplash.com/photo-1605106901227-991bd663255c?w=500&auto=format&fit=crop",
-    color: "#13006c",
+      "Jean-Jacques Rousseau với câu nói nổi tiếng: “Con người sinh ra tự do, nhưng ở đâu cũng bị trói buộc.” Ông chỉ ra rằng tự do tự nhiên của con người bị giới hạn bởi các thiết chế xã hội, và để giải phóng khỏi những ràng buộc này, con người cần được giáo dục và khai sáng, vượt qua định kiến và tư duy hạn hẹp.",
+    src: "https://vi.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+    link: "/assets/image/Jean-Jacques-Rousseau.jpg",
+    color: "#4caf50",
   },
   {
-    title: "Mathias Svold and Ulrik Hasemann",
+    title: "John Dewey (1859 – 1952)",
     description:
-      "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
-    src: "house.jpg",
-    link: "https://images.unsplash.com/photo-1605106715994-18d3fecffb98?w=500&auto=format&fit=crop&q=60",
+      "John Dewey khẳng định: “Giáo dục không phải là chuẩn bị cho cuộc sống mà là cuộc sống.” Theo ông, giáo dục không chỉ là việc tiếp thu kiến thức mà còn là sự phát triển tư duy phản biện và khả năng giải quyết vấn đề trong thực tiễn. Dewey nhấn mạnh rằng giáo dục phải kết hợp lý thuyết với thực hành, giúp con người trưởng thành và phát triển trong một xã hội dân chủ.",
+    src: "https://vi.wikipedia.org/wiki/John_Dewey",
+    link: "/assets/image/JohnDewey.jpg",
     color: "#ed649e",
   },
   {
-    title: "Mark Rammers",
+    title: "Albert Einstein (1879 – 1955)",
     description:
-      "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.",
-    src: "cactus.jpg",
-    link: "https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop",
+      "Albert Einstein từng nói: “Giáo dục là điều còn lại sau khi chúng ta đã quên hết những gì đã học trong trường.” Ông cho rằng giáo dục không chỉ là sự tích lũy kiến thức mà là phát triển khả năng tư duy sáng tạo và đặt câu hỏi. Einstein tin rằng con người cần được giáo dục để không chỉ hiểu biết mà còn phát triển tư duy độc lập và phản biện.",
+    src: "https://vi.wikipedia.org/wiki/Albert_Einstein",
+    link: "/assets/image/AlbertEinstein.jpg",
     color: "#fd521a",
   },
 ];
@@ -61,7 +61,8 @@ export default function DevelopmentSection(): JSX.Element {
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
             <h1 className="2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]">
-              Stacking Cards Using <br /> Framer-Motion. Scroll down! 👇
+              Triết học qua lời các nhà tư tưởng vĩ đại. <br /> Khám phá ngay!
+              👇
             </h1>
           </section>
         </>
@@ -85,13 +86,6 @@ export default function DevelopmentSection(): JSX.Element {
             );
           })}
         </section>
-
-        <footer className="group bg-slate-950 ">
-          <h1 className="text-[16vw]  translate-y-20 leading-[100%] uppercase font-semibold text-center bg-gradient-to-r from-gray-400 to-gray-800 bg-clip-text text-transparent transition-all ease-linear">
-            ui-layout
-          </h1>
-          <div className="bg-black h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"></div>
-        </footer>
       </main>
     </ReactLenis>
   );
@@ -111,7 +105,7 @@ export const Card: React.FC<CardProps> = ({
   i,
   title,
   description,
-  // src,
+  src,
   url,
   color,
   progress,
@@ -140,17 +134,19 @@ export const Card: React.FC<CardProps> = ({
         }}
         className={`flex flex-col relative -top-[25%] h-[450px] w-[70%] rounded-md p-10 origin-top`}
       >
-        <h2 className="text-2xl text-center font-semibold">{title}</h2>
+        <h2 className="text-2xl text-center font-semibold text-black">
+          {title}
+        </h2>
         <div className={`flex h-full mt-5 gap-10`}>
           <div className={`w-[40%] relative top-[10%]`}>
-            <p className="text-sm">{description}</p>
+            <p className="text-xl">{description}</p>
             <span className="flex items-center gap-2 pt-2">
               <a
-                href={"#"}
+                href={src}
                 target="_blank"
-                className="underline cursor-pointer"
+                className="underline cursor-pointer hover:text-blue-900"
               >
-                See more
+                Xem chi tiết thông tin về nhà Triết Học
               </a>
               <svg
                 width="22"
@@ -174,7 +170,7 @@ export const Card: React.FC<CardProps> = ({
               className={`w-full h-full`}
               style={{ scale: imageScale }}
             >
-              <Image fill src={url} alt="image" className="object-cover" />
+              <Image fill src={url} alt={title} className="object-cover" />
             </motion.div>
           </div>
         </div>

@@ -45,9 +45,12 @@ export default function HorizontalScroll(): JSX.Element {
         <div className="bg-orange-500" id="welcome">
           <InfinityBrand />
         </div>
-
+        <div>
+          <img src="\assets\image\Aristotle.jpg" alt="image" />
+        </div>
         <section id="analysis">
           <AnalysisSection />
+          <DevelopmentSection />
         </section>
 
         {/* Section 3: Trồng Người */}
@@ -80,7 +83,6 @@ export default function HorizontalScroll(): JSX.Element {
         </section>
 
         <section id="opinion">
-          <DevelopmentSection />
           <TimelineDemo />
           <OpinionSection />
           <ImageHover />
