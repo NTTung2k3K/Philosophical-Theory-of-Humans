@@ -1,39 +1,36 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export function useScrollSpy(selectors: string[], options?: IntersectionObserverInit) {
-    const [activeId, setActiveId] = useState<string>();
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function useScrollSpy(ids: any, offset = 0) {
+    const [activeId, setActiveId] = useState("");
 
     useEffect(() => {
-        const elements = selectors.map((selector) => document.querySelector(selector));
+        const handleScroll = () => {
+            let closestId = null;
+            let closestDistance = Infinity;
 
-        if (elements.some((element) => element === null)) {
-            return;
-        }
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleEntries = entries.filter((entry) => entry.isIntersecting);
-
-                if (visibleEntries.length === 0) {
-                    // Nếu không có phần tử nào hiện, set active cho phần tử đầu tiên
-                    setActiveId(selectors[0].slice(1));  // Lấy ID từ selector (vd: #home => home)
-                } else {
-                    // Nếu có phần tử hiện, chọn phần tử đầu tiên trong visibleEntries
-                    setActiveId(visibleEntries[0].target.getAttribute("id") ?? undefined);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            ids.forEach((id: any) => {
+                const element = document.querySelector(id);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    const distance = Math.abs(rect.top - offset);
+                    if (distance < closestDistance && rect.bottom > 0) {
+                        closestDistance = distance;
+                        closestId = id;
+                    }
                 }
-            },
-            {
-                rootMargin: "-50% 0px -50% 0px",
-                ...options,
+            });
+
+            if (closestId) {
+                setActiveId((closestId as string).replace("#", "")); // Loại bỏ `#` để chỉ lấy id
             }
-        );
+        };
 
-        elements.forEach((element) => {
-            if (element) observer.observe(element);
-        });
-
-        return () => observer.disconnect();
-    }, [selectors, options]);
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll(); // Gọi khi mount để set trạng thái ban đầu
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [ids, offset]);
 
     return activeId;
 }

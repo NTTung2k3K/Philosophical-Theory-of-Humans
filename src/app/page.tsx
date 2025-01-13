@@ -1,6 +1,5 @@
 "use client";
 
-import AccessCount from "@/app/_components/access-count";
 import AnalysisSection from "@/app/_components/analysis";
 import { AnimatedTestimonialsDemo } from "@/app/_components/animated-testimonials";
 import ConclusionSection from "@/app/_components/conclusion";
@@ -8,6 +7,7 @@ import DevelopmentSection from "@/app/_components/development";
 import { HeroHighlightDemo } from "@/app/_components/highlight-text";
 import InfinityBrand from "@/app/_components/infinity-brand";
 import Introduction from "@/app/_components/introduction";
+import LazyVideo from "@/app/_components/lazy-video";
 import OpinionSection from "@/app/_components/opinion";
 import { HeroScrollDemo } from "@/app/_components/scroll-animation";
 import { StickyScrollRevealDemo } from "@/app/_components/sticky-scroll";
@@ -17,6 +17,7 @@ import { SpotlightPreview } from "@/app/_components/text-spoilight";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
 import { TracingBeamDemo } from "@/app/_components/tracing-beam";
+import WelcomeSection from "@/app/_components/welcome-section";
 import LampDemo from "@/components/ui/lamp";
 import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
@@ -30,21 +31,37 @@ export default function HorizontalScroll(): JSX.Element {
 
       <main>
         <section
-          id="welcome"
-          className="h-screen flex items-center justify-center tex bg-background bg-red-300"
+          id="welcome-header"
+          className="h-screen flex items-center justify-center  bg-black relative overflow-hidden"
         >
-          <div className="container">
+          <LazyVideo
+            src="/assets/videos/main.mp4"
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          />
+          <div className="container relative z-10">
             <div className="text-center">
-              <Introduction />
-
-              {/* <RandomizedTextEffect text="Vì lợi ích mười năm trồng cây<br> Vì lợi ích trăm năm trồng người" /> */}
+              <WelcomeSection />
             </div>
           </div>
         </section>
+        <section id="welcome-header">
+          <div className="bg-black">
+            <InfinityBrand />
+          </div>
+        </section>
 
-        <div className="bg-orange-500" id="welcome">
-          <AccessCount />
-          <InfinityBrand />
+        <div
+          id="welcome-content"
+          className="bg-black text-center"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/image/main-sentence.jpg')`,
+            backgroundSize: "cover",
+            height: "100vh",
+            backgroundPosition: "center",
+            filter: "brightness(90%)",
+          }}
+        >
+          <Introduction />
         </div>
         <section id="analysis">
           <AnalysisSection />

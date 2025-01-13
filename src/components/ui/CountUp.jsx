@@ -96,14 +96,17 @@ export default function CountUp({
   return (
     <>
       <button
-        className={`relative mx-auto flex items-center justify-center px-8 py-4 text-lg font-bold text-white rounded-lg shadow-lg bg-gradient-to-r from-[#ff7eb3] via-[#ff758c] to-[#ff758c] hover:shadow-xl hover:scale-105 transition-transform duration-300 ${className}`}
+        className={`relative  flex items-center justify-center text-lg text-white rounded-lg shadow-lg bg-transparent hover:shadow-xl hover:scale-105 transition-transform duration-300 ${className}`}
       >
-        Số lượng truy cập: &nbsp;
+        <span className="text-sm">
+
+          Số lượng truy cập: &nbsp;
+        </span>
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={3}
           showBorder={false}
-          className={`custom-class ${className}`}
+          className={`custom-class font-semibold ${className}`}
         >
           <span ref={ref} />
         </GradientText>
