@@ -1,6 +1,5 @@
 "use client";
 import { ReactLenis } from "lenis/react";
-import Image from "next/image";
 import { JSX } from "react";
 export default function OpinionSection(): JSX.Element {
   return (
@@ -13,14 +12,14 @@ export default function OpinionSection(): JSX.Element {
             <div className="flex w-[90%] items-center justify-between">
               <blockquote className="2xl:text-3xl text-xl px-6 font-medium text-left leading-[140%] tracking-wide w-[58.33%]">
                 <p className="mb-3 text-green-500">
-                  🌱 Câu nói “Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
-                  trồng người” hàm chứa một triết lý sâu sắc về mối quan hệ giữa
+                  🌱 Câu nói &quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
+                  trồng người&quot; hàm chứa một triết lý sâu sắc về mối quan hệ giữa
                   con người và sự phát triển bền vững của xã hội. ✅
                 </p>
                 <p className="text-2xl">
                   🤔 Từ góc nhìn triết học, con người không chỉ là cá thể sinh
                   học mà còn là chủ thể xã hội, có ý thức, giá trị và tiềm năng
-                  phát triển vượt bậc. 🌟 Việc "trồng người" chính là đầu tư vào
+                  phát triển vượt bậc. 🌟 Việc &quot;trồng người&quot; chính là đầu tư vào
                   giáo dục, đạo đức, và sự phát triển toàn diện của con người để
                   xây dựng một xã hội tiến bộ, công bằng và nhân văn.
                 </p>
