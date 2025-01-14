@@ -66,12 +66,6 @@ export default function Introduction() {
           </h1>
           <br></br>
           <span>☘️</span>
-          <br></br>
-          <br></br>
-          <h3 className="text-2xl font-bold text-center text-gray-300">
-            🌳 Câu nói hàm chứa một triết lý sâu sắc về mối quan hệ giữa con
-            người và sự phát triển bền vững của xã hội. 🔑
-          </h3>
         </div>
       </div>
     </>
