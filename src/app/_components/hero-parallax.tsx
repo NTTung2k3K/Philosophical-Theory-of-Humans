@@ -20,7 +20,7 @@ export const products = [
   },
   {
     title: "Nelson Mandela",
-    link: "https://vi.wikipedia.org/wiki/Nelson_Mandela",
+    link: "https://vnexpress.net/nelson-mandela-va-triet-ly-vu-khi-giao-duc-thay-doi-the-gioi-4346990.html",
     thumbnail:
       "/assets/image/Vai_Tro/Nelson/anh7.jpg",
     height:200,
@@ -47,7 +47,7 @@ export const products = [
   },
   {
     title: "Nelson Mandela",
-    link: "https://vi.wikipedia.org/wiki/Nelson_Mandela",
+    link: "https://giadungnhaviet.com/cau-chuyen-ve-nguoi-thay-va-chiec-dong-ho/",
     thumbnail:
       "/assets/image/Vai_Tro/Nelson/anh8.jpg",
     height:200,
@@ -61,7 +61,7 @@ export const products = [
   },
   {
     title: "Nelson Mandela",
-    link: "https://vi.wikipedia.org/wiki/Nelson_Mandela",
+    link: "https://www.vietnamplus.vn/infographics-nelson-mandela-bieu-tuong-chong-phan-biet-chung-toc-post514162.vnp",
     thumbnail:
       "/assets/image/Vai_Tro/Nelson/anh9.jpg",
     height:1000,
