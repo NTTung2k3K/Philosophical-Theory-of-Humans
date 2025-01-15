@@ -177,4 +177,4 @@ export const Card: React.FC<CardProps> = ({
       </motion.div>
     </div>
   );
-};
+}
