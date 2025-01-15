@@ -42,8 +42,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Vai trò của con người với sự phát triển xã hội
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-2xl">
-          Con người luôn là trung tâm và động lực của mọi sự biến đổi trong lịch
-          sử xã hội. Không giống như thiên nhiên hay công nghệ - những yếu tố dễ
+          Con người 🧑‍🤝‍🧑 luôn là trung tâm và động lực của mọi sự biến đổi trong 📜 lịch
+          sử xã hội. Không giống như 🌴 thiên nhiên hay 🤖 công nghệ - những yếu tố dễ
           dàng mất đi hoặc lỗi thời, giá trị của con người ngày càng được khẳng
           định là nền tảng bền vững nhất để xây dựng và duy trì sự phát triển xã
           hội. Vai trò của con người trong sự phát triển xã hội thể hiện qua ba

@@ -11,8 +11,8 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Con người không chỉ tham gia vào quá trình lao động sản xuất mà còn
             là lực lượng sáng tạo nên những giá trị mới. Trong mọi lĩnh vực, từ
-            khoa học, công nghệ, đến văn hóa nghệ thuật, những phát minh, ý
-            tưởng, và cải tiến đều bắt nguồn từ trí tuệ và khát vọng của con
+            khoa học 🔬, công nghệ 💻, đến văn hóa nghệ thuật 🎤, những phát minh, ý
+            tưởng, và cải tiến đều bắt nguồn từ trí tuệ 🧠 và khát vọng 🔥 của con
             người.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
@@ -55,7 +55,7 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             - Hay tại Việt Nam, việc ứng dụng công nghệ 4.0 trong nông nghiệp đã
             giúp tăng năng suất và chất lượng nông sản, nhờ vào sự sáng tạo và ý
-            chí vượt khó của các nhà khoa học và nông dân.
+            chí vượt khó của 👨‍💻 các nhà khoa học và nông dân.
             <br></br>
             <br></br>
           </p>
@@ -98,7 +98,7 @@ export function TimelineDemo() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Con người không chỉ là những cá nhân riêng lẻ mà còn là đại diện cho
-            truyền thống, bản sắc văn hóa, và các giá trị cộng đồng. Mỗi thế hệ
+            truyền thống, bản sắc văn hóa, và các giá trị cộng đồng 🎹. Mỗi thế hệ
             có trách nhiệm giữ gìn và làm giàu thêm kho tàng văn hóa đó, từ đó
             tạo nên sức mạnh mềm cho quốc gia và cộng đồng.
             <br></br>
@@ -144,7 +144,7 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             - Các quốc gia Đông Nam Á, trong đó có Việt Nam, với các lễ hội dân
             gian, di sản văn hóa phi vật thể như hát quan họ, đã tạo nên bản sắc
-            độc đáo để hội nhập nhưng không hòa tan trong toàn cầu hóa.
+            độc đáo để hội nhập nhưng không hòa tan trong toàn cầu hóa 🎼. 
             <br></br>
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -186,7 +186,7 @@ export function TimelineDemo() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Mọi tiến bộ của xã hội đều cần dựa trên nền tảng đạo đức và luật
-            pháp để tránh sự hỗn loạn hoặc phát triển thiếu bền vững. Con người,
+            pháp 👩🏻‍⚖️ để tránh sự hỗn loạn hoặc phát triển thiếu bền vững. Con người,
             với ý thức trách nhiệm và khả năng tự giác, là người đặt ra và duy
             trì các quy tắc nhằm đảm bảo trật tự xã hội.
           </p>

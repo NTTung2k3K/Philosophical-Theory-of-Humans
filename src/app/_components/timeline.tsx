@@ -21,7 +21,7 @@ function TimelineAnimation() {
       >
         <TimelineContent animationNum={0} timelineRef={heroRef}>
           <Image
-            src="/assets/image/Vai_Tro/KetNoi/anh1.jpg"
+            src="/assets/image/Vai_Tro/KetNoi/anh2.jpg"
             className="w-full h-96  object-cover rounded-md "
             alt=""
             width={500}
@@ -36,7 +36,7 @@ function TimelineAnimation() {
             <p className="text-xl leading-[200%]">
               - Từ những vai trò trên, có thể thấy rằng con người không chỉ là
               người thực hiện các mục tiêu phát triển mà còn là nguồn lực tạo ra
-              mục tiêu đó.
+              mục tiêu đó 💯.
             </p>
             <br />
             <p className="text-xl leading-[200%]">
