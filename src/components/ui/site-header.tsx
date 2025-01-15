@@ -100,7 +100,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <div className="flex items-center justify-around space-x-3 text-sm">
-              <AudioPlayer audioSrc="/music/main.mp3" />
+              <AudioPlayer audioSrc="/music/sound.ogg" />
               {/* <MoveLeftIcon className="text-white italic" size={24} />
               <span className="ml-2 text-white italic">Music here</span> */}
             </div>

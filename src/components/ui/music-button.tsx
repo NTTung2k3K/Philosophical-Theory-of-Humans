@@ -1,7 +1,7 @@
 "use client";
 
 import { Play, Pause } from "lucide-react";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 interface AudioPlayerProps {
   audioSrc: string; // Đường dẫn tới file nhạc
@@ -10,7 +10,11 @@ interface AudioPlayerProps {
 export function AudioPlayer({ audioSrc }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.load(); // Tải nhạc ngay từ đầu
+    }
+  }, []);
   const togglePlayPause = () => {
     if (!audioRef.current) return;
 
