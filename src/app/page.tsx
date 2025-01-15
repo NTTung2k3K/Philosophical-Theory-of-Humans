@@ -12,7 +12,6 @@ import OpinionSection from "@/app/_components/opinion";
 import { HeroScrollDemo } from "@/app/_components/scroll-animation";
 import { StickyScrollRevealDemo } from "@/app/_components/sticky-scroll";
 import { TabsDemo } from "@/app/_components/tabs";
-import { TextGenerateEffectDemo } from "@/app/_components/text-generate-effect";
 import { SpotlightPreview } from "@/app/_components/text-spoilight";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
@@ -23,6 +22,8 @@ import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
 import ImageHover from "@/components/ui/tailwind-hover-accordion";
 import { JSX } from "react";
+import { HeroParallaxDemo } from "./_components/hero-parallax";
+import { GoogleGeminiEffectDemo } from "./_components/google-gemini-effect";
 export default function HorizontalScroll(): JSX.Element {
   return (
     <div className="relative">
@@ -68,24 +69,10 @@ export default function HorizontalScroll(): JSX.Element {
           <DevelopmentSection />
         </section>
 
-        {/* Section 3: Trồng Người */}
-        <section id="role" className="bg-yellow-300">
-          <TimelineAnimation />
-          <div className="container">
-            <h2 className="text-3xl font-bold">
-              Trồng Người và Phát Triển Xã Hội
-            </h2>
 
-            <h3 className="text-2xl font-bold mt-6">Dẫn Chứng Thực Tế</h3>
-
-            <h3 className="text-2xl font-bold mt-6">
-              Vai Trò Của Con Người Trong Sự Phát Triển Xã Hội
-            </h3>
-          </div>
-        </section>
 
         {/* Other Sections */}
-        <section
+        {/*<section
           id="development"
           className="h-screen flex items-center justify-center bg-muted/50 bg-white"
         >
@@ -95,22 +82,32 @@ export default function HorizontalScroll(): JSX.Element {
               What our customers say
             </p>
           </div>
+        </section>*/}
+        <section id="role" className="bg-white-300">
+        <TimelineDemo />
+        <LampDemo />
+        <TimelineAnimation />
+        <HeroParallaxDemo/>
+        </section>
+
+        {/*className="h-screen flex items-center justify-center bg-muted/50 bg-white-300"*/}
+        <section
+          id="development"
+        >
+        <GoogleGeminiEffectDemo/>
+        <TracingBeamDemo />
         </section>
 
         <section id="opinion">
-          <TimelineDemo />
           <OpinionSection />
           <ImageHover />
           <LinearCard />
-          <TextGenerateEffectDemo />
         </section>
 
         <section id="conclusion" className="bg-black">
-          <TracingBeamDemo />
           <div className="my-1"></div>
           <StickyScrollRevealDemo />
           <TabsDemo />
-          <LampDemo />
           <SpotlightPreview />
           <HeroHighlightDemo />
           <HeroScrollDemo />

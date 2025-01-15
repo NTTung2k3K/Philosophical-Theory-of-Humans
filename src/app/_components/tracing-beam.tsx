@@ -10,13 +10,13 @@ export function TracingBeamDemo() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="bg-black text-white rounded-full text-md  w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
 
-            <p className={twMerge("text-xl mb-4")}>{item.title}</p>
+            <p className={twMerge("text-3xl mb-4")}>{item.title}</p>
 
-            <div className="text-sm prose prose-sm dark:prose-invert">
+            <div className="text-lg prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
@@ -37,78 +37,100 @@ export function TracingBeamDemo() {
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Đầu tư vào giáo dục chất lượng",
     description: (
       <>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+        Giáo dục không chỉ trang bị tri thức mà còn định hình tư duy, kỹ năng, và nhân cách cho con người. 
+        Một hệ thống giáo dục tiên tiến cần đảm bảo các yếu tố:
         </p>
         <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+        - Học tập suốt đời: Cung cấp cơ hội học tập cho mọi lứa tuổi để người dân có thể cập nhật kiến thức
+        , nâng cao năng lực trong một thế giới luôn thay đổi.
         </p>
         <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+        - Giáo dục hướng kỹ năng: Kết hợp giữa lý thuyết và thực hành để chuẩn bị tốt hơn cho lực lượng lao động, 
+        giúp họ đáp ứng nhu cầu thị trường.
+        </p>
+        <p>
+        - Công bằng trong giáo dục: Đảm bảo mọi người, bất kể giới tính, dân tộc, hoặc hoàn cảnh kinh tế, đều có cơ hội tiếp cận giáo dục.
         </p>
       </>
     ),
-    badge: "React",
+    badge: "Thứ 1",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/assets/image/Phat_Trien/GiaoDuc/anh1.jpg",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Phát triển thể chất và tinh thần",
     description: (
       <>
+      Một xã hội khỏe mạnh chỉ có thể được xây dựng trên nền tảng sức khỏe và tinh thần vững vàng:
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          - Nâng cao sức khỏe cộng đồng: Đầu tư vào hệ thống y tế hiện đại và xây dựng ý thức tự chăm sóc sức khỏe trong mỗi cá nhân.
         </p>
         <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+        Khuyến khích lối sống lành mạnh: Tạo môi trường thân thiện để phát triển các hoạt động thể thao, văn hóa và nghệ thuật.
+        </p>
+        <p>
+        Chăm sóc sức khỏe tinh thần: Đặc biệt trong thời đại công nghệ, cần chú trọng đến việc ngăn chặn stress và các vấn đề tâm
+        lý do áp lực xã hội gây ra.
         </p>
       </>
     ),
-    badge: "Changelog",
+    badge: "Thứ 2",
     image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/assets/image/Phat_Trien/TheChat/anh1.jpg",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Xây dựng môi trường xã hội hỗ trợ",
     description: (
       <>
+        Con người không thể phát triển toàn diện nếu sống trong một môi trường thiếu lành mạnh:
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          - Gia đình là nền tảng: Giáo dục gia đình cần được đề cao để mỗi thành viên trở thành công dân có trách nhiệm.
+        </p>
+        <p>
+          - Cộng đồng hỗ trợ: Tạo dựng một cộng đồng nơi mọi người giúp đỡ lẫn nhau, chia sẻ cơ hội và giảm thiểu bất công.
         </p>
       </>
     ),
-    badge: "Launch Week",
+    badge: "Thứ 3",
     image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/assets/image/Phat_Trien/MoiTruong/anh1.jpg",
+  },
+  {
+    title: "Thúc đẩy sáng tạo và đổi mới",
+    description: (
+      <>
+        Để phát triển con người trong thời đại công nghệ, cần khuyến khích tư duy đổi mới và tinh thần khởi nghiệp:
+        <p>
+          - Hỗ trợ nghiên cứu và sáng tạo: Đầu tư vào các trung tâm nghiên cứu và cung cấp tài trợ cho những ý tưởng mới.
+        </p>
+        <p>
+          - Xây dựng văn hóa đổi mới: Đưa ra chính sách hỗ trợ khởi nghiệp, giảm bớt các rào cản pháp lý để thúc đẩy tinh thần sáng tạo.
+        </p>
+      </>
+    ),
+    badge: "Thứ 4",
+    image:
+      "/assets/image/Phat_Trien/SangTao/anh1.jpg",
+  },
+  {
+    title: "Định hướng phát triển đạo đức và giá trị",
+    description: (
+      <>
+        Phát triển con người không chỉ là phát triển năng lực mà còn phải chú trọng xây dựng nền tảng đạo đức:
+        <p>
+        - Giáo dục đạo đức: Đưa các giá trị như trách nhiệm, lòng nhân ái, và tính trung thực vào chương trình giảng dạy.
+        </p>
+        <p>
+        - Khuyến khích hành động vì cộng đồng: Đẩy mạnh các chương trình tình nguyện và đóng góp xã hội để tạo dựng ý thức vì tập thể.
+        </p>
+      </>
+    ),
+    badge: "Thứ 5",
+    image:
+      "/assets/image/Phat_Trien/DaoDuc/anh1.jpg",
   },
 ];
