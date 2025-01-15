@@ -1,36 +1,31 @@
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function useScrollSpy(ids: any, offset = 0) {
+export function useScrollSpy(ids: string[], offset = 64) {
     const [activeId, setActiveId] = useState("");
 
     useEffect(() => {
         const handleScroll = () => {
-            let closestId = null;
-            let closestDistance = Infinity;
+            let currentId = "";
 
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            ids.forEach((id: any) => {
+            ids.forEach((id) => {
                 const element = document.querySelector(id);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    const distance = Math.abs(rect.top - offset);
-                    if (distance < closestDistance && rect.bottom > 0) {
-                        closestDistance = distance;
-                        closestId = id;
+                    if (rect.top <= offset && rect.bottom > offset) {
+                        currentId = id; // Phần tử đang trong viewport
                     }
                 }
             });
 
-            if (closestId) {
-                setActiveId((closestId as string).replace("#", "")); // Loại bỏ `#` để chỉ lấy id
-            }
+            setActiveId(currentId.replace("#", ""));
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        handleScroll(); // Gọi khi mount để set trạng thái ban đầu
+        handleScroll(); // Chạy ngay khi mount để sync trạng thái
         return () => window.removeEventListener("scroll", handleScroll);
     }, [ids, offset]);
 
     return activeId;
 }
+
