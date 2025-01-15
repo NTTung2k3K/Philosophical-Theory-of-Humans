@@ -1,26 +1,17 @@
 "use client";
 
-import AnalysisSection from "@/app/_components/analysis";
-import { AnimatedTestimonialsDemo } from "@/app/_components/animated-testimonials";
 import ConclusionSection from "@/app/_components/conclusion";
 import DevelopmentSection from "@/app/_components/development";
-import { HeroHighlightDemo } from "@/app/_components/highlight-text";
 import InfinityBrand from "@/app/_components/infinity-brand";
 import Introduction from "@/app/_components/introduction";
 import LazyVideo from "@/app/_components/lazy-video";
 import OpinionSection from "@/app/_components/opinion";
-import { HeroScrollDemo } from "@/app/_components/scroll-animation";
-import { StickyScrollRevealDemo } from "@/app/_components/sticky-scroll";
-import { TabsDemo } from "@/app/_components/tabs";
-import { SpotlightPreview } from "@/app/_components/text-spoilight";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
 import { TracingBeamDemo } from "@/app/_components/tracing-beam";
 import WelcomeSection from "@/app/_components/welcome-section";
 import LampDemo from "@/components/ui/lamp";
-import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
-import ImageHover from "@/components/ui/tailwind-hover-accordion";
 import { JSX } from "react";
 import { HeroParallaxDemo } from "./_components/hero-parallax";
 import { GoogleGeminiEffectDemo } from "./_components/google-gemini-effect";
