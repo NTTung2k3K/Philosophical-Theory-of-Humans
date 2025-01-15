@@ -11,17 +11,22 @@ export default function OpinionSection(): JSX.Element {
 
             <div className="flex w-[90%] items-center justify-between">
               <blockquote className="2xl:text-3xl text-xl px-6 font-medium text-left leading-[140%] tracking-wide w-[58.33%]">
-                <p className="mb-3 text-green-500">
-                  🌱 Câu nói &quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
-                  trồng người&quot; hàm chứa một triết lý sâu sắc về mối quan hệ giữa
-                  con người và sự phát triển bền vững của xã hội. ✅
+                <p className="mb-3 ">
+                  🌱 Câu nói
+                  <span className="text-green-500 font-semibold">
+                    &quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
+                    trồng người&quot;
+                  </span>
+                  hàm chứa một triết lý sâu sắc về mối quan hệ giữa con người và
+                  sự phát triển bền vững của xã hội. ✅
                 </p>
                 <p className="text-2xl">
                   🤔 Từ góc nhìn triết học, con người không chỉ là cá thể sinh
                   học mà còn là chủ thể xã hội, có ý thức, giá trị và tiềm năng
-                  phát triển vượt bậc. 🌟 Việc &quot;trồng người&quot; chính là đầu tư vào
-                  giáo dục, đạo đức, và sự phát triển toàn diện của con người để
-                  xây dựng một xã hội tiến bộ, công bằng và nhân văn.
+                  phát triển vượt bậc. 🌟 Việc &quot;trồng người&quot; chính là
+                  đầu tư vào giáo dục, đạo đức, và sự phát triển toàn diện của
+                  con người để xây dựng một xã hội tiến bộ, công bằng và nhân
+                  văn.
                 </p>
               </blockquote>
 
@@ -37,7 +42,7 @@ export default function OpinionSection(): JSX.Element {
         <section className="text-white   w-full bg-slate-950  ">
           <div className="flex justify-between px-16">
             <div className="sticky top-0 h-screen grid place-content-center w-1/2">
-              <p className="text-3xl px-8 font-medium text-left tracking-tight leading-[120%]">
+              <p className="text-2xl px-8 font-medium text-left tracking-tight leading-[120%]">
                 <span className="font-bold">🌟 Con người</span>, trong triết
                 học, là thực thể trung tâm với giá trị vượt thời gian, đóng vai
                 trò quan trọng trong mọi lĩnh vực.

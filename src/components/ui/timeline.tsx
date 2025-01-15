@@ -39,13 +39,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-5xl mb-10 text-black dark:text-white max-w-7xl font-bold">
-        Vai trò của con người với sự phát triển xã hội
+          Vai trò của con người với sự phát triển xã hội
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-2xl">
-          Con người luôn là trung tâm và động lực của mọi sự biến đổi trong lịch sử xã hội. 
-          Không giống như thiên nhiên hay công nghệ - những yếu tố dễ dàng mất đi hoặc lỗi thời, 
-          giá trị của con người ngày càng được khẳng định là nền tảng bền vững nhất để xây dựng và duy trì sự phát triển xã hội. 
-          Vai trò của con người trong sự phát triển xã hội thể hiện qua ba khía cạnh chính:
+          Con người luôn là trung tâm và động lực của mọi sự biến đổi trong lịch
+          sử xã hội. Không giống như thiên nhiên hay công nghệ - những yếu tố dễ
+          dàng mất đi hoặc lỗi thời, giá trị của con người ngày càng được khẳng
+          định là nền tảng bền vững nhất để xây dựng và duy trì sự phát triển xã
+          hội. Vai trò của con người trong sự phát triển xã hội thể hiện qua ba
+          khía cạnh chính:
         </p>
       </div>
 
@@ -59,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-400  dark:text-neutral-400 ">
                 {item.title}
               </h3>
             </div>

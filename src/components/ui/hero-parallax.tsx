@@ -104,12 +104,15 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-      Sự thành công của một quốc gia <br /> không nằm ở tài nguyên <br/> mà nằm ở con người
+      <h1 className="text-2xl md:text-7xl font-bold text-black">
+        Sự thành công của một quốc gia <br /> không nằm ở tài nguyên <br /> mà
+        nằm ở con người
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      <strong>Nelson Mandela</strong> từng khẳng định: “Giáo dục là vũ khí mạnh nhất mà bạn có thể sử dụng để thay đổi thế giới.” 
-      Việc đầu tư vào con người chính là chìa khóa để mở ra cánh cửa phát triển cho mọi xã hội.
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-black">
+        <strong>Nelson Mandela</strong> từng khẳng định: “Giáo dục là vũ khí
+        mạnh nhất mà bạn có thể sử dụng để thay đổi thế giới.” Việc đầu tư vào
+        con người chính là chìa khóa để mở ra cánh cửa phát triển cho mọi xã
+        hội.
       </p>
     </div>
   );
@@ -139,6 +142,7 @@ export const ProductCard = ({
     >
       <Link
         href={product.link}
+        target="_blank"
         className="block group-hover/product:shadow-2xl "
       >
         <Image

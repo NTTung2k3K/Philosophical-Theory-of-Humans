@@ -5,7 +5,7 @@ export default function WelcomeSection() {
     console.log("All letters have animated!");
   };
   const handleScrollToContent = () => {
-    const contentSection = document.getElementById("welcome-content");
+    const contentSection = document.getElementById("analysis");
     if (contentSection) {
       contentSection.scrollIntoView({ behavior: "smooth" });
     }

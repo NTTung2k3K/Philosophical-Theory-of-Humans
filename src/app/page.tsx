@@ -42,51 +42,36 @@ export default function HorizontalScroll(): JSX.Element {
           </div>
         </section>
 
-        <div
-          id="welcome-content"
-          className="bg-black text-center"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/image/main-sentence.jpg')`,
-            backgroundSize: "cover",
-            height: "100vh",
-            backgroundPosition: "center",
-            filter: "brightness(90%)",
-          }}
-        >
-          <Introduction />
-        </div>
         <section id="analysis">
-          <OpinionSection />
-          <DevelopmentSection />
+          <>
+            <div
+              id="welcome-content"
+              className="bg-black text-center"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/image/main-sentence.jpg')`,
+                backgroundSize: "cover",
+                height: "100vh",
+                backgroundPosition: "center",
+                filter: "brightness(90%)",
+              }}
+            >
+              <Introduction />
+            </div>
+            <OpinionSection />
+            <DevelopmentSection />
+          </>
         </section>
 
-
-
-        {/* Other Sections */}
-        {/*<section
-          id="development"
-          className="h-screen flex items-center justify-center bg-muted/50 bg-white"
-        >
-          <div className="container">
-            <h2 className="text-3xl font-bold">Testimonials</h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              What our customers say
-            </p>
-          </div>
-        </section>*/}
         <section id="role" className="bg-white-300">
-        <TimelineDemo />
-        <LampDemo />
-        <TimelineAnimation />
-        <HeroParallaxDemo/>
+          <TimelineDemo />
+          <LampDemo />
+          <TimelineAnimation />
+          <HeroParallaxDemo />
         </section>
 
-        {/*className="h-screen flex items-center justify-center bg-muted/50 bg-white-300"*/}
-        <section
-          id="development"
-        >
-        <GoogleGeminiEffectDemo/>
-        <TracingBeamDemo />
+        <section id="development" className="my-5">
+          <GoogleGeminiEffectDemo />
+          <TracingBeamDemo />
         </section>
 
         {/* <section id="conclusion" className="bg-black">

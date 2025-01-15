@@ -47,7 +47,14 @@ export default function LazyVideo({
   }, [isPlaying]);
 
   return (
-    <video ref={videoRef} loop muted playsInline className={className}>
+    <video
+      ref={videoRef}
+      loop
+      muted
+      playsInline
+      className={className}
+      preload="none"
+    >
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>

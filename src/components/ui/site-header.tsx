@@ -10,7 +10,10 @@ const navigation = [
   {
     id: "welcome",
     label: "Giới thiệu",
-    hrefs: ["#welcome-header", "#welcome-content"], // Nhiều id cho "welcome"
+    hrefs: [
+      "#welcome-header",
+      // , "#welcome-content"
+    ], // Nhiều id cho "welcome"
   },
   {
     id: "analysis",
@@ -32,17 +35,18 @@ const navigation = [
     label: "Quan điểm",
     hrefs: ["#opinion"],
   },
-  {
-    id: "conclusion",
-    label: "Kết luận",
-    hrefs: ["#conclusion"],
-  },
+  // {
+  //   id: "conclusion",
+  //   label: "Kết luận",
+  //   hrefs: ["#conclusion"],
+  // },
 ];
 
 export function SiteHeader() {
   const activeId = useScrollSpy(
     navigation.flatMap((item) => item.hrefs) // Gộp tất cả `href` thành một mảng duy nhất
   );
+  console.log(activeId);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black shadow-sm">

@@ -42,13 +42,13 @@ const items = [
     desc: "Con người là yếu tố quyết định trong việc bảo vệ môi trường và thúc đẩy công bằng xã hội, góp phần xây dựng một thế giới công bằng và bền vững.",
     src: "/assets/image/conclusion5.jpg",
   },
-  {
-    icon: <Home />,
-    title: "🔑 Tổng kết",
-    sliderName: "Tổng kết",
-    desc: 'Tóm lại, "trồng người" không chỉ mang lại lợi ích ngay lập tức mà còn tạo dựng nền tảng cho sự thịnh vượng lâu dài, góp phần xây dựng một xã hội vững mạnh và bền vững trong tương lai.',
-    src: "/assets/image/conclusion4.jpg",
-  },
+  // {
+  //   icon: <Home />,
+  //   title: "🔑 Tổng kết",
+  //   sliderName: "Tổng kết",
+  //   desc: 'Tóm lại, "trồng người" không chỉ mang lại lợi ích ngay lập tức mà còn tạo dựng nền tảng cho sự thịnh vượng lâu dài, góp phần xây dựng một xã hội vững mạnh và bền vững trong tương lai.',
+  //   src: "/assets/image/conclusion4.jpg",
+  // },
 ];
 
 export default function ConclusionSection() {
@@ -95,7 +95,7 @@ export default function ConclusionSection() {
         activeSlider={activeSlider} // Truyền state activeSlider
         className="flex h-full"
       >
-        <SliderBtnGroup className="relative w-5/12 z-10 flex flex-col h-full bg-slate-950 backdrop-blur-md overflow-hidden">
+        <SliderBtnGroup className="relative w-3/6 z-10 flex flex-col h-full bg-slate-950 backdrop-blur-md overflow-hidden">
           {items.map((item, index) => (
             <SliderBtn
               key={index}
@@ -107,14 +107,14 @@ export default function ConclusionSection() {
               <h2 className="relative px-4 py-2 rounded w-fit bg-white text-black mb-4 text-xl font-bold">
                 {item.title}
               </h2>
-              <p className="text-sm font-medium text-slate-200 line-clamp-2">
+              <p className="text-base font-medium text-slate-200 line-clamp-2">
                 {item.desc}
               </p>
             </SliderBtn>
           ))}
         </SliderBtnGroup>
 
-        <SliderContent className="w-7/12 flex flex-col h-full">
+        <SliderContent className="w-3/6 flex flex-col h-full">
           {items.map((item, index) => (
             <SliderWrapper
               className="h-full w-full"
