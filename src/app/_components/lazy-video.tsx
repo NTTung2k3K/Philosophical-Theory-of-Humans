@@ -11,41 +11,46 @@ export default function LazyVideo({
   className,
 }: LazyVideoProps): JSX.Element {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  //const [isPlaying, setIsPlaying] = useState(false);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         setIsPlaying(true); // Bật phát video
+  //       } else {
+  //         setIsPlaying(false); // Tạm dừng video
+  //       }
+  //     },
+  //     { threshold: 0.5 } // Kích hoạt khi ít nhất 50% video xuất hiện trong viewport
+  //   );
+
+  //   if (videoRef.current) {
+  //     observer.observe(videoRef.current);
+  //   }
+
+  //   return () => {
+  //     if (videoRef.current) {
+  //       observer.unobserve(videoRef.current);
+  //     }
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   if (videoRef.current) {
+  //     if (isPlaying) {
+  //       videoRef.current.play();
+  //     } else {
+  //       videoRef.current.pause();
+  //     }
+  //   }
+  // }, [isPlaying]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsPlaying(true); // Bật phát video
-        } else {
-          setIsPlaying(false); // Tạm dừng video
-        }
-      },
-      { threshold: 0.5 } // Kích hoạt khi ít nhất 50% video xuất hiện trong viewport
-    );
-
     if (videoRef.current) {
-      observer.observe(videoRef.current);
+      videoRef.current.play(); // Phát video ngay khi trang tải
     }
-
-    return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
-      }
-    };
   }, []);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  }, [isPlaying]);
-
   return (
     <video
       ref={videoRef}
@@ -53,7 +58,7 @@ export default function LazyVideo({
       muted
       playsInline
       className={className}
-      preload="none"
+      preload="auto"
     >
       <source src={src} type="video/webm" />
       Your browser does not support the video tag.
