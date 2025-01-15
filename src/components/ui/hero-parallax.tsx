@@ -109,7 +109,7 @@ export const Header = () => {
         nằm ở con người
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-black">
-        <strong>Nelson Mandela</strong> từng khẳng định: “Giáo dục là vũ khí
+        <strong>Nelson Mandela</strong> từng khẳng định: “Giáo dục 🏫 là vũ khí
         mạnh nhất mà bạn có thể sử dụng để thay đổi thế giới.” Việc đầu tư vào
         con người chính là chìa khóa để mở ra cánh cửa phát triển cho mọi xã
         hội.
