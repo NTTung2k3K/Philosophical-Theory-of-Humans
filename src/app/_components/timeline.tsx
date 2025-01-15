@@ -1,12 +1,16 @@
 "use client";
 
 import React, { useRef } from "react";
-{/*import { Github } from "lucide-react";*/}
+{
+  /*import { Github } from "lucide-react";*/
+}
 import { TimelineContent } from "@/components/ui/framer-timeline";
 import Image from "next/image";
 
 function TimelineAnimation() {
-  {/*const aboutRef = useRef<HTMLDivElement | null>(null);*/} // Explicit type for aboutRef
+  {
+    /*const aboutRef = useRef<HTMLDivElement | null>(null);*/
+  } // Explicit type for aboutRef
   const heroRef = useRef<HTMLDivElement | null>(null); // Explicit type for heroRef
 
   return (
@@ -27,14 +31,18 @@ function TimelineAnimation() {
         <div className="space-y-2">
           {" "}
           <TimelineContent animationNum={1} timelineRef={heroRef}>
-            <p className="text-2xl leading-[200%]">
-            Từ những vai trò trên, có thể thấy rằng con người không chỉ là người thực hiện các mục tiêu phát triển mà còn là nguồn lực 
-            tạo ra mục tiêu đó.
+            <h3 className="font-bold text-2xl">Tóm lại</h3>
+            <br />
+            <p className="text-xl leading-[200%]">
+              - Từ những vai trò trên, có thể thấy rằng con người không chỉ là
+              người thực hiện các mục tiêu phát triển mà còn là nguồn lực tạo ra
+              mục tiêu đó.
             </p>
             <br />
-            <p className="text-2xl leading-[200%]">
-            Một xã hội có thể phát triển bền vững hay không phụ thuộc vào việc từng cá nhân có được trao cơ hội, 
-            điều kiện để phát triển toàn diện về trí tuệ, đạo đức và tinh thần.
+            <p className="text-xl leading-[200%]">
+              - Một xã hội có thể phát triển bền vững hay không phụ thuộc vào
+              việc từng cá nhân có được trao cơ hội, điều kiện để phát triển
+              toàn diện về trí tuệ, đạo đức và tinh thần.
             </p>
           </TimelineContent>
         </div>
