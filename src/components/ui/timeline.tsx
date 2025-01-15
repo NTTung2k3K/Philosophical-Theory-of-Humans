@@ -37,13 +37,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+      <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10">
+        <h2 className="text-lg md:text-5xl mb-10 text-black dark:text-white max-w-7xl font-bold">
+        Vai trò của con người với sự phát triển xã hội
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-2xl">
+          Con người luôn là trung tâm và động lực của mọi sự biến đổi trong lịch sử xã hội. 
+          Không giống như thiên nhiên hay công nghệ - những yếu tố dễ dàng mất đi hoặc lỗi thời, 
+          giá trị của con người ngày càng được khẳng định là nền tảng bền vững nhất để xây dựng và duy trì sự phát triển xã hội. 
+          Vai trò của con người trong sự phát triển xã hội thể hiện qua ba khía cạnh chính:
         </p>
       </div>
 

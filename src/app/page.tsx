@@ -1,28 +1,20 @@
 "use client";
 
-import AnalysisSection from "@/app/_components/analysis";
-import { AnimatedTestimonialsDemo } from "@/app/_components/animated-testimonials";
 import ConclusionSection from "@/app/_components/conclusion";
 import DevelopmentSection from "@/app/_components/development";
-import { HeroHighlightDemo } from "@/app/_components/highlight-text";
 import InfinityBrand from "@/app/_components/infinity-brand";
 import Introduction from "@/app/_components/introduction";
 import LazyVideo from "@/app/_components/lazy-video";
 import OpinionSection from "@/app/_components/opinion";
-import { HeroScrollDemo } from "@/app/_components/scroll-animation";
-import { StickyScrollRevealDemo } from "@/app/_components/sticky-scroll";
-import { TabsDemo } from "@/app/_components/tabs";
-import { TextGenerateEffectDemo } from "@/app/_components/text-generate-effect";
-import { SpotlightPreview } from "@/app/_components/text-spoilight";
 import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
 import { TracingBeamDemo } from "@/app/_components/tracing-beam";
 import WelcomeSection from "@/app/_components/welcome-section";
 import LampDemo from "@/components/ui/lamp";
-import LinearCard from "@/components/ui/linear-card";
 import { SiteHeader } from "@/components/ui/site-header";
-import ImageHover from "@/components/ui/tailwind-hover-accordion";
 import { JSX } from "react";
+import { HeroParallaxDemo } from "./_components/hero-parallax";
+import { GoogleGeminiEffectDemo } from "./_components/google-gemini-effect";
 export default function HorizontalScroll(): JSX.Element {
   return (
     <div className="relative">
@@ -68,24 +60,10 @@ export default function HorizontalScroll(): JSX.Element {
           <DevelopmentSection />
         </section>
 
-        {/* Section 3: Trồng Người */}
-        <section id="role" className="bg-yellow-300">
-          <TimelineAnimation />
-          <div className="container">
-            <h2 className="text-3xl font-bold">
-              Trồng Người và Phát Triển Xã Hội
-            </h2>
 
-            <h3 className="text-2xl font-bold mt-6">Dẫn Chứng Thực Tế</h3>
-
-            <h3 className="text-2xl font-bold mt-6">
-              Vai Trò Của Con Người Trong Sự Phát Triển Xã Hội
-            </h3>
-          </div>
-        </section>
 
         {/* Other Sections */}
-        <section
+        {/*<section
           id="development"
           className="h-screen flex items-center justify-center bg-muted/50 bg-white"
         >
@@ -95,26 +73,33 @@ export default function HorizontalScroll(): JSX.Element {
               What our customers say
             </p>
           </div>
+        </section>*/}
+        <section id="role" className="bg-white-300">
+        <TimelineDemo />
+        <LampDemo />
+        <TimelineAnimation />
+        <HeroParallaxDemo/>
         </section>
 
-        <section id="opinion">
-          <TimelineDemo />
-          <AnalysisSection />
-          <ImageHover />
-          <LinearCard />
-          <TextGenerateEffectDemo />
-          <TracingBeamDemo />
+        {/*className="h-screen flex items-center justify-center bg-muted/50 bg-white-300"*/}
+        <section
+          id="development"
+        >
+        <GoogleGeminiEffectDemo/>
+        <TracingBeamDemo />
+        </section>
+
+        {/* <section id="conclusion" className="bg-black">
           <div className="my-1"></div>
           <StickyScrollRevealDemo />
           <TabsDemo />
-          <LampDemo />
           <SpotlightPreview />
           <HeroHighlightDemo />
           <HeroScrollDemo />
           <AnimatedTestimonialsDemo />
-        </section>
+        </section> */}
 
-        <section id="conclusion" className="bg-black">
+        <section id="opinion" className="bg-black">
           <section className="text-white h-screen w-full bg-slate-950 grid place-content-center relative">
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
