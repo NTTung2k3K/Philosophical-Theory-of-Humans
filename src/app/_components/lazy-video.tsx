@@ -1,5 +1,5 @@
 "use client";
-import { JSX, useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef } from "react";
 
 interface LazyVideoProps {
   src: string;
