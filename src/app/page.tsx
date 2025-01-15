@@ -43,7 +43,7 @@ export default function HorizontalScroll(): JSX.Element {
             className="h-screen flex items-center justify-center  bg-black relative overflow-hidden"
           >
             <LazyVideo
-              src="/assets/videos/main.webm"
+              src="/assets/videos/bonme.mp4"
               className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />
             <div className="container relative z-10">

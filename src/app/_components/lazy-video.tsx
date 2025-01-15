@@ -60,7 +60,7 @@ export default function LazyVideo({
       className={className}
       preload="auto"
     >
-      <source src={src} type="video/webm" />
+      <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );
