@@ -12,12 +12,12 @@ export default function OpinionSection(): JSX.Element {
             <div className="flex w-[90%] items-center justify-between">
               <blockquote className="2xl:text-3xl text-xl px-6 font-medium text-left leading-[140%] tracking-wide w-[58.33%]">
                 <p className="mb-3 ">
-                  🌱 Câu nói
+                  🌱 Câu nói 
                   <span className="text-green-500 font-semibold">
-                    &quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
-                    trồng người&quot;
+                    &nbsp;&quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm
+                    trồng người&quot;&nbsp;
                   </span>
-                  hàm chứa một triết lý sâu sắc về mối quan hệ giữa con người và
+                   hàm chứa một triết lý sâu sắc về mối quan hệ giữa con người và
                   sự phát triển bền vững của xã hội. ✅
                 </p>
                 <p className="text-2xl">
