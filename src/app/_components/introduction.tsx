@@ -5,54 +5,61 @@ export default function Introduction() {
   const words = [
     {
       text: "Vì",
+      className: "text-white",
     },
     {
       text: "lợi",
+      className: "text-white",
     },
     {
       text: "ích",
+      className: "text-white",
     },
     {
       text: "mười",
+      className: "text-white",
     },
     {
       text: "năm",
+      className: "text-white",
     },
     {
       text: "trồng",
+      className: "text-white",
     },
     {
       text: "cây",
+      className: "text-white",
     },
   ];
   const words2 = [
     {
       text: "Vì",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "lợi",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "ích",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "trăm",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "năm",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "trồng",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
     {
       text: "người",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
   return (
