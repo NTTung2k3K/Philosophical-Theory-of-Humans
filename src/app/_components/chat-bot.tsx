@@ -13,13 +13,13 @@ export default function ChatBotIntegration() {
 
     // Thêm phần tử df-messenger vào DOM
     const dfMessenger = document.createElement("df-messenger");
-    dfMessenger.setAttribute("intent", "Xin chào đằng ấy!");
+    dfMessenger.setAttribute("intent", "Default Welcome Intent VN");
     dfMessenger.setAttribute("chat-title", "Hạt giống của sự văn minh");
     dfMessenger.setAttribute(
       "agent-id",
       "875137db-07d8-4043-88cf-7ee429e1bd00"
     );
-    dfMessenger.setAttribute("language-code", "vn");
+    dfMessenger.setAttribute("language-code", "vi");
     document.body.appendChild(dfMessenger);
 
     // Cleanup: Xóa script và element khi component bị unmount
