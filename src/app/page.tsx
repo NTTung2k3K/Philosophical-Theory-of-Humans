@@ -81,8 +81,8 @@ export default function HorizontalScroll(): JSX.Element {
           </section>
 
           <section id="role" className="bg-white-300">
-            <TimelineDemo />
             <LampDemo />
+            <TimelineDemo />
             <TimelineAnimation />
             <HeroParallaxDemo />
           </section>

@@ -15,6 +15,7 @@ function TimelineAnimation() {
 
   return (
     <>
+      <h3 className="font-semibold text-5xl text-center text-green-500">Tóm lại: Kết nối vai trò con người với sự phát triển của xã hội </h3>
       <section
         className="sm:grid grid-cols-2 gap-10 h-[550px] pt-10 px-4"
         ref={heroRef}
@@ -31,8 +32,6 @@ function TimelineAnimation() {
         <div className="space-y-2">
           {" "}
           <TimelineContent animationNum={1} timelineRef={heroRef}>
-            <h3 className="font-bold text-2xl">Tóm lại</h3>
-            <br />
             <p className="text-xl leading-[200%]">
               - Từ những vai trò trên, có thể thấy rằng con người không chỉ là
               người thực hiện các mục tiêu phát triển mà còn là nguồn lực tạo ra
