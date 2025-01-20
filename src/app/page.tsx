@@ -16,6 +16,7 @@ import { JSX, useState } from "react";
 import { HeroParallaxDemo } from "./_components/hero-parallax";
 import { GoogleGeminiEffectDemo } from "./_components/google-gemini-effect";
 import PlantLoader from "@/components/ui/plant-loader";
+import ChatBotIntegration from "@/app/_components/chat-bot";
 export default function HorizontalScroll(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   return (
@@ -34,6 +35,7 @@ export default function HorizontalScroll(): JSX.Element {
         />
       </div>
       <div className={`relative ${isLoading ? "hidden" : "block"}`}>
+        <ChatBotIntegration />
         <SiteHeader />
         {/* <FloatingDockDemo /> */}
 
