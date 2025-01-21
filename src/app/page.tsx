@@ -6,7 +6,6 @@ import InfinityBrand from "@/app/_components/infinity-brand";
 import Introduction from "@/app/_components/introduction";
 import LazyVideo from "@/app/_components/lazy-video";
 import OpinionSection from "@/app/_components/opinion";
-import TimelineAnimation from "@/app/_components/timeline";
 import { TimelineDemo } from "@/app/_components/timeline-2";
 import { TracingBeamDemo } from "@/app/_components/tracing-beam";
 import WelcomeSection from "@/app/_components/welcome-section";
