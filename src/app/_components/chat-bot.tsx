@@ -23,6 +23,7 @@ export default function ChatBotIntegration() {
     document.body.appendChild(dfMessenger);
 
     // Cleanup: Xóa script và element khi component bị unmount
+
     return () => {
       document.body.removeChild(script);
       document.body.removeChild(dfMessenger);
