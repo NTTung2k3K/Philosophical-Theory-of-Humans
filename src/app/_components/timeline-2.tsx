@@ -11,9 +11,9 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Con người không chỉ tham gia vào quá trình lao động sản xuất mà còn
             là lực lượng sáng tạo nên những giá trị mới. Trong mọi lĩnh vực, từ
-            khoa học 🔬, công nghệ 💻, đến văn hóa nghệ thuật 🎤, những phát minh, ý
-            tưởng, và cải tiến đều bắt nguồn từ trí tuệ 🧠 và khát vọng 🔥 của con
-            người.
+            khoa học 🔬, công nghệ 💻, đến văn hóa nghệ thuật 🎤, những phát
+            minh, ý tưởng, và cải tiến đều bắt nguồn từ trí tuệ 🧠 và khát vọng
+            🔥 của con người.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             <strong className="font-bold">Ví dụ:</strong>
@@ -98,9 +98,9 @@ export function TimelineDemo() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Con người không chỉ là những cá nhân riêng lẻ mà còn là đại diện cho
-            truyền thống, bản sắc văn hóa, và các giá trị cộng đồng 🎹. Mỗi thế hệ
-            có trách nhiệm giữ gìn và làm giàu thêm kho tàng văn hóa đó, từ đó
-            tạo nên sức mạnh mềm cho quốc gia và cộng đồng.
+            truyền thống, bản sắc văn hóa, và các giá trị cộng đồng 🎹. Mỗi thế
+            hệ có trách nhiệm giữ gìn và làm giàu thêm kho tàng văn hóa đó, từ
+            đó tạo nên sức mạnh mềm cho quốc gia và cộng đồng.
             <br></br>
             <br></br>
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
@@ -144,7 +144,7 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             - Các quốc gia Đông Nam Á, trong đó có Việt Nam, với các lễ hội dân
             gian, di sản văn hóa phi vật thể như hát quan họ, đã tạo nên bản sắc
-            độc đáo để hội nhập nhưng không hòa tan trong toàn cầu hóa 🎼. 
+            độc đáo để hội nhập nhưng không hòa tan trong toàn cầu hóa 🎼.
             <br></br>
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -186,9 +186,9 @@ export function TimelineDemo() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             Mọi tiến bộ của xã hội đều cần dựa trên nền tảng đạo đức và luật
-            pháp 👩🏻‍⚖️ để tránh sự hỗn loạn hoặc phát triển thiếu bền vững. Con người,
-            với ý thức trách nhiệm và khả năng tự giác, là người đặt ra và duy
-            trì các quy tắc nhằm đảm bảo trật tự xã hội.
+            pháp 👩🏻‍⚖️ để tránh sự hỗn loạn hoặc phát triển thiếu bền vững. Con
+            người, với ý thức trách nhiệm và khả năng tự giác, là người đặt ra
+            và duy trì các quy tắc nhằm đảm bảo trật tự xã hội.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
             <strong className="font-bold">Ví dụ:</strong>
@@ -246,6 +246,35 @@ export function TimelineDemo() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
+        </div>
+      ),
+    },
+    {
+      title: "Kết nối vai trò con người với sự phát triển của xã hội",
+      content: (
+        <div className="dark:text-white text-black">
+          <Image
+            src="/assets/image/Vai_Tro/KetNoi/anh2.jpg"
+            className="w-full h-96  object-cover rounded-md "
+            alt=""
+            width={500}
+            height={500}
+          />
+          <section className="sm:grid grid-cols-1 gap-10 h-[550px] pt-10 px-4">
+            <div className="space-y-2">
+              <p className="text-xl leading-[200%]">
+                - Từ những vai trò trên, có thể thấy rằng con người không chỉ là
+                người thực hiện các mục tiêu phát triển mà còn là nguồn lực tạo
+                ra mục tiêu đó 💯.
+              </p>
+              <br />
+              <p className="text-xl leading-[200%]">
+                - Một xã hội có thể phát triển bền vững hay không phụ thuộc vào
+                việc từng cá nhân có được trao cơ hội, điều kiện để phát triển
+                toàn diện về trí tuệ, đạo đức và tinh thần.
+              </p>
+            </div>
+          </section>
         </div>
       ),
     },
