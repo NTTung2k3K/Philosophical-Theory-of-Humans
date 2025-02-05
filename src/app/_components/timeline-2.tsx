@@ -260,15 +260,15 @@ export function TimelineDemo() {
             width={500}
             height={500}
           />
-          <section className="sm:grid grid-cols-1 gap-10 h-[550px] pt-10 px-4">
+          <section className="sm:grid grid-cols-1 gap-10 h-[200px] md:h-[550px] lg:h-[550px] pt-10 px-4">
             <div className="space-y-2">
-              <p className="text-xl leading-[200%]">
+              <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
                 - Từ những vai trò trên, có thể thấy rằng con người không chỉ là
                 người thực hiện các mục tiêu phát triển mà còn là nguồn lực tạo
                 ra mục tiêu đó 💯.
               </p>
               <br />
-              <p className="text-xl leading-[200%]">
+              <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
                 - Một xã hội có thể phát triển bền vững hay không phụ thuộc vào
                 việc từng cá nhân có được trao cơ hội, điều kiện để phát triển
                 toàn diện về trí tuệ, đạo đức và tinh thần.

@@ -64,16 +64,12 @@ export default function Introduction() {
   ];
   return (
     <>
-      <div className=" py-10 rounded-md text-center justify-around items-center h-screen">
-        <div className="flex flex-col h-full justify-center items-center">
-          <h1 className="font-departure text-4xl relative z-10 text-center h-[120px] md:h-auto leading-tight w-[60%]">
-            {/* <RandomizedTextEffect text="Production ready code" /> */}
-            <TypewriterEffectSmooth words={words} />
-            <TypewriterEffectSmooth words={words2} />
-          </h1>
-          <br></br>
-          <span>☘️</span>
-        </div>
+      <div className="min-h-screen py-10 flex flex-col justify-center items-center">
+        <h1 className="font-departure text-2xl sm:text-3xl md:text-4xl relative z-10 text-center px-4 md:px-0 md:w-[80%] lg:w-[60%]">
+          <TypewriterEffectSmooth words={words} />
+          <TypewriterEffectSmooth words={words2} />
+        </h1>
+        <span className="mt-8 text-4xl">☘️</span>
       </div>
     </>
   );

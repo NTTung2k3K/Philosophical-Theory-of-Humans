@@ -1,5 +1,5 @@
 "use client";
-import { JSX, useEffect, useRef } from "react";
+import { JSX, useEffect, useRef, useState } from "react";
 
 interface LazyVideoProps {
   src: string;
@@ -11,40 +11,40 @@ export default function LazyVideo({
   className,
 }: LazyVideoProps): JSX.Element {
   const videoRef = useRef<HTMLVideoElement>(null);
-  //const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       if (entry.isIntersecting) {
-  //         setIsPlaying(true); // Bật phát video
-  //       } else {
-  //         setIsPlaying(false); // Tạm dừng video
-  //       }
-  //     },
-  //     { threshold: 0.5 } // Kích hoạt khi ít nhất 50% video xuất hiện trong viewport
-  //   );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsPlaying(true); // Bật phát video
+        } else {
+          setIsPlaying(false); // Tạm dừng video
+        }
+      },
+      { threshold: 0.5 } // Kích hoạt khi ít nhất 50% video xuất hiện trong viewport
+    );
 
-  //   if (videoRef.current) {
-  //     observer.observe(videoRef.current);
-  //   }
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
 
-  //   return () => {
-  //     if (videoRef.current) {
-  //       observer.unobserve(videoRef.current);
-  //     }
-  //   };
-  // }, []);
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
 
-  // useEffect(() => {
-  //   if (videoRef.current) {
-  //     if (isPlaying) {
-  //       videoRef.current.play();
-  //     } else {
-  //       videoRef.current.pause();
-  //     }
-  //   }
-  // }, [isPlaying]);
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
 
   useEffect(() => {
     if (videoRef.current) {

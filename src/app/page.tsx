@@ -33,13 +33,13 @@ export default function HorizontalScroll(): JSX.Element {
           minimumLoadingTime={3500} // Set minimum loading time to 3 seconds
         />
       </div>
-      <div className={`relative ${isLoading ? "hidden" : "block"}`}>
+      <div className={`relative ${isLoading ? "hidden" : "block w-full"}`}>
         <ChatBotIntegration />
         <SiteHeader />
         {/* <FloatingDockDemo /> */}
 
         <main>
-          <section
+          {/* <section
             id="welcome-header"
             className="h-screen flex items-center justify-center  bg-black relative overflow-hidden"
           >
@@ -52,9 +52,23 @@ export default function HorizontalScroll(): JSX.Element {
                 <WelcomeSection />
               </div>
             </div>
+          </section> */}
+          <section
+            id="welcome-header"
+            className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden"
+          >
+            <LazyVideo
+              src="/assets/videos/bonme.mp4"
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+            />
+            <div className="container relative z-10 mx-auto px-4">
+              <div className="text-center">
+                <WelcomeSection />
+              </div>
+            </div>
           </section>
           <section id="welcome-header">
-            <div className="bg-black">
+            <div className=" bg-black w-full overflow-hidden">
               <InfinityBrand />
             </div>
           </section>
@@ -70,6 +84,7 @@ export default function HorizontalScroll(): JSX.Element {
                   height: "100vh",
                   backgroundPosition: "center",
                   filter: "brightness(90%)",
+                  minHeight: "100vh",
                 }}
               >
                 <Introduction />
@@ -102,21 +117,30 @@ export default function HorizontalScroll(): JSX.Element {
         </section> */}
 
           <section id="opinion" className="bg-black">
-            <section className="text-white h-screen w-full bg-slate-950 grid place-content-center relative">
-              <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-
-              <h1 className="2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%] text-green-500">
-                &quot;Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm trồng
-                người&quot;
-              </h1>
-              <br />
-              <h1 className="2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]">
-                Dưới đây là quan điểm của nhóm! 👇
-              </h1>
-            </section>
-
             <ConclusionSection />
           </section>
+          <div className="text-center py-8 bg-black">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold animate-gradient bg-gradient-to-r from-yellow-400 via-red-500 to-pink-600 bg-clip-text text-transparent">
+              Thank you for watching!
+            </h2>
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mt-4">
+              We appreciate your time and hope you enjoyed the presentation.
+            </p>
+            <div className="flex justify-center mt-4">
+              <svg
+                className="w-12 h-12 text-red-500 animate-bounce"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </main>
       </div>
     </>

@@ -56,29 +56,23 @@ export default function DevelopmentSection(): JSX.Element {
   return (
     <ReactLenis root>
       <main className="bg-black" ref={container}>
-        <>
-          <section className="text-white  h-[70vh]  w-full bg-slate-950  grid place-content-center ">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <section className="text-white min-h-[70vh] w-full bg-slate-950 grid place-content-center px-4">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-            <h1 className="2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]">
-              Triết học qua lời các nhà tư tưởng vĩ đại. <br /> Khám phá ngay!
-              👇
-            </h1>
-          </section>
-        </>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-7xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
+            Triết học qua lời các nhà tư tưởng vĩ đại. <br /> Khám phá ngay! 👇
+          </h1>
+        </section>
 
-        <section className="text-white   w-full bg-slate-950  ">
+        <section className="text-white w-full bg-slate-950">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
               <Card
                 key={`p_${i}`}
                 i={i}
-                url={project?.link}
-                src={project?.src}
-                title={project?.title}
-                color={project?.color}
-                description={project?.description}
+                url={project.link}
+                {...project}
                 progress={scrollYProgress}
                 range={[i * 0.25, 1]}
                 targetScale={targetScale}
@@ -124,7 +118,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="min-h-screen flex items-center justify-center sticky top-0 px-4 py-8 lg:py-16"
     >
       <motion.div
         style={{
@@ -132,19 +126,21 @@ export const Card: React.FC<CardProps> = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className={`flex flex-col relative -top-[25%] h-[450px] w-[70%] rounded-md p-10 origin-top`}
+        className="flex flex-col relative -top-[25%] h-auto w-full sm:w-[90%] lg:w-[70%] rounded-md p-4 sm:p-6 lg:p-8 origin-top"
       >
-        <h2 className="text-2xl text-center font-semibold text-black">
+        <h2 className="text-xl sm:text-2xl text-center font-semibold text-black mb-4">
           {title}
         </h2>
-        <div className={`flex h-full mt-5 gap-10`}>
-          <div className={`w-[40%] relative top-[10%]`}>
-            <p className="text-xl">{description}</p>
-            <span className="flex items-center gap-2 pt-2">
+
+        <div className="flex flex-col lg:flex-row h-full gap-4 lg:gap-6">
+          <div className="w-full lg:w-[40%] relative flex flex-col justify-between">
+            <p className="text-base sm:text-xl">{description}</p>
+            <span className="flex items-center gap-2 pt-4">
               <a
                 href={src}
                 target="_blank"
-                className="underline cursor-pointer hover:text-blue-900"
+                className="underline cursor-pointer hover:text-blue-900 text-sm sm:text-base"
+                rel="noreferrer"
               >
                 Xem chi tiết thông tin về nhà Triết Học
               </a>
@@ -163,18 +159,19 @@ export const Card: React.FC<CardProps> = ({
             </span>
           </div>
 
-          <div
-            className={`relative w-[60%] h-full rounded-lg overflow-hidden `}
-          >
-            <motion.div
-              className={`w-full h-full`}
-              style={{ scale: imageScale }}
-            >
-              <Image fill src={url} alt={title} className="object-cover" />
+          <div className="relative w-full lg:w-[60%] aspect-[4/3] lg:aspect-[16/9] rounded-lg overflow-hidden">
+            <motion.div className="w-full h-full" style={{ scale: imageScale }}>
+              <Image
+                fill
+                src={url || "/placeholder.svg"}
+                alt={title}
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </motion.div>
           </div>
         </div>
       </motion.div>
     </div>
   );
-}
+};
